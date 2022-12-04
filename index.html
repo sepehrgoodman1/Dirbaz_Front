@@ -1,0 +1,809 @@
+<!-- Ui Designer => Gamil: SepehrGoodMan2000@gmail.com ; Phone: 09917598589 -->
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DirBaz</title>
+
+    <!-- my css  -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="Navbar">
+      <div class="Menu">
+        <img src="assets/images/logo.png" class="LogoNav" alt="لوگو دیرباز" />
+
+        <div class="MenuItem MenuItemActive">صفحه اصلی</div>
+        <div class="MenuItem">
+          وبلاگ
+          <img src="assets/images/ArrowNav.svg" class="ArrowNav" alt="Arrow" />
+        </div>
+        <div class="MenuItem">قوانین و مقررات</div>
+        <div class="MenuItem">درباره ما</div>
+        <div class="MenuItem">تماس با ما</div>
+      </div>
+      <div class="P_Enetr">
+        <img src="assets/images/search.svg" class="SearchIcon" alt="Search" />
+
+        <button class="EnetrBtn">ورود / ثبت نام</button>
+      </div>
+    </div>
+    <!-- End NavBar  -->
+
+    <!-- Body -->
+
+    <!-- Banner  -->
+    <div class="BannerWrapper">
+      <div class="TitleBannerWrapper">
+        <!-- h  -->
+        <h1 class="TitleBanner"> <span class="Primary_500">ملک</span> مورد نیاز خود را </br>
+          <span class="MoveToLeft">
+            <span class="Primary_500"> در سریع ترین زمان </span> ممکن پیدا کنید 
+          </span>
+        </h1>
+        <div class="TitleInput">برای پیدا کردن ملک مورد نظر منطقه مورد نظر را واردکنید</div>
+        <div class="P_InputBtn">
+          <input type="text" class="Input Flex1" placeholder="جستجوی منطقه یا محله"/>
+          <button class="BtnSearch">جستجو</button>
+        </div>
+        <!-- h  -->
+      </div>
+      <div class="Flex1">
+        <img
+          src="assets/images/header pic 1.png"
+          class="ImageBanner"
+          alt="HeaderPic"
+        />
+      </div>
+    </div>
+    <!-- End Banner  -->
+
+    <!-- Map Area  -->
+    <div class="MapArea">
+      <h3 class="TitleSections">جستجو پیشرفته و سریع ملک</h3>
+      <div class="DeskTitle">
+        برای پیدا کردن ملک خود میتوانید فیلد های زیر را پر کنید و یا از روی نقشه
+        منطقه مورد نظر خود را انتخاب کنید.
+      </div>
+
+      <div class="ComponentMelk">
+        <div class="P_ItemFilter">
+          <div class="FilterMelk FilterMelk_Active">مسکونی</div>
+          <div class="FilterMelk">تجاری</div>
+          <div class="FilterMelk">زمین</div>
+        </div>
+        <div class="P_AreaFormMelk">
+          <div class="AreaFormMelk Flex1">
+            <input
+              type="text"
+              class="InputMelk Flex1"
+              placeholder="شماره پرونده یا محدوده آدرس ملک"
+            />
+            <span class="P_SelectInput">
+              <input
+                type="text"
+                class="InputMelk W190 Pointer"
+                placeholder="نوع قرارداد"
+              />
+              <img
+                src="assets/images/ArrowNav.svg"
+                class="ArrowSelect"
+                alt="arrow"
+              />
+              <div class="ListSlect RadioGroup DisNone">
+                <div class="ItemSelect">
+                  <span onclick="RadioButton(0)">
+                    <img
+                      src="assets/images/check.svg"
+                      class="ImgCheck"
+                      alt="check"
+                    />
+                    <span class="TextCheck">اجاره</span>
+                  </span>
+                </div>
+                <div class="ItemSelect">
+                  <span onclick="RadioButton(1)">
+                    <img
+                      src="assets/images/check.svg"
+                      class="ImgCheck"
+                      alt="check"
+                    />
+                    <span class="TextCheck">فروش</span>
+                  </span>
+                </div>
+              </div>
+            </span>
+
+            <span class="PosRel">
+              <input
+                type="text"
+                class="InputMelk W190"
+                placeholder="کمینه قیمت"
+              />
+              <span class="TextFrom">از</span>
+            </span>
+            <span class="PosRel">
+              <input
+                type="text"
+                class="InputMelk W190"
+                placeholder="بیشینه قیمت"
+              />
+              <span class="TextFrom">تا</span>
+            </span>
+
+            <input
+              type="text"
+              class="InputMelk W190 NoBr"
+              placeholder="تعداد اتاق"
+            />
+          </div>
+          <div class="D_Flex">
+            <button class="BtnMelk">
+              <img src="assets/images/searchwhite.svg" alt="search" />
+            </button>
+            <button class="BtnMelk Se_Bg_50">
+              <img src="assets/images/melk.svg" alt="melk" />
+            </button>
+          </div>
+        </div>
+
+        <div class="P_Map">
+          <div class="AreaMap"></div>
+          <div class="Sites">
+            <div class="TitleSite">ملک های پیدا شده</div>
+            <div class="WrapperAllSites">
+              <!-- item site  -->
+              <div class="SignleSite">
+                <div class="Flex1">
+                  <div class="SellTitle">قرار داد فروش</div>
+                  <div class="P_Detail">
+                    <!-- first Col  -->
+                    <div class="Col_Detail">
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/yearBuild.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          سال ساخت بنا:
+                        </div>
+
+                        <div class="YearBuild">1380</div>
+                      </div>
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/bed.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          واحد اتاق:
+                        </div>
+
+                        <div class="YearBuild">4</div>
+                      </div>
+                    </div>
+                    <!-- second Col  -->
+                    <div class="Col_Detail Mr_15">
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/yearBuild.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          مساحت کل ملک:
+                        </div>
+
+                        <div class="YearBuild">300 هزار متر مربع</div>
+                      </div>
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/user.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          نام کارگذار:
+                        </div>
+
+                        <div class="YearBuild">نیلوفر باقری</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img src="assets/images/site.png" class="ImgSite" alt="ملک" />
+                </div>
+              </div>
+              <!-- item site  -->
+              <div class="SignleSite">
+                <div class="Flex1">
+                  <div class="SellTitle">قرار داد فروش</div>
+                  <div class="P_Detail">
+                    <!-- first Col  -->
+                    <div class="Col_Detail">
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/yearBuild.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          سال ساخت بنا:
+                        </div>
+
+                        <div class="YearBuild">1380</div>
+                      </div>
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/bed.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          واحد اتاق:
+                        </div>
+
+                        <div class="YearBuild">4</div>
+                      </div>
+                    </div>
+                    <!-- second Col  -->
+                    <div class="Col_Detail Mr_15">
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/yearBuild.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          مساحت کل ملک:
+                        </div>
+
+                        <div class="YearBuild">300 هزار متر مربع</div>
+                      </div>
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/user.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          نام کارگذار:
+                        </div>
+
+                        <div class="YearBuild">نیلوفر باقری</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img src="assets/images/site.png" class="ImgSite" alt="ملک" />
+                </div>
+              </div>
+              <!-- item site  -->
+              <div class="SignleSite">
+                <div class="Flex1">
+                  <div class="SellTitle">قرار داد فروش</div>
+                  <div class="P_Detail">
+                    <!-- first Col  -->
+                    <div class="Col_Detail">
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/yearBuild.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          سال ساخت بنا:
+                        </div>
+
+                        <div class="YearBuild">1380</div>
+                      </div>
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/bed.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          واحد اتاق:
+                        </div>
+
+                        <div class="YearBuild">4</div>
+                      </div>
+                    </div>
+                    <!-- second Col  -->
+                    <div class="Col_Detail Mr_15">
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/yearBuild.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          مساحت کل ملک:
+                        </div>
+
+                        <div class="YearBuild">300 هزار متر مربع</div>
+                      </div>
+                      <div class="TextDetail">
+                        <div>
+                          <img
+                            src="assets/images/user.svg"
+                            class="ImgDetail"
+                            alt=""
+                          />
+                          نام کارگذار:
+                        </div>
+
+                        <div class="YearBuild">نیلوفر باقری</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img src="assets/images/site.png" class="ImgSite" alt="ملک" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Map Area  -->
+    <div>
+      <h2 class="NewestMelk">جدیدترین املاک</h2>
+      <div class="P_WrapperAllMelks">
+        <!-- carousel  -->
+        <div class="ArrowLeft swiper-button-next swiper-navBtn">
+          <img src="assets/images/ArrowLeft.svg" alt="" />
+        </div>
+        <div class="ArrowRight swiper-button-prev swiper-navBtn">
+          <img src="assets/images/ArrowRight.svg" alt="" />
+        </div>
+
+        <div class="WrapperAllMelks slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse" alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer" alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse" alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer" alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse" alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer" alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse" alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer" alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section  -->
+    <div class="P_Mosque">
+      <div class="P_ImgMosque">
+        <img src="assets/images/mosque.png" class="ImgMosque" alt="" />
+      </div>
+      <div class="P_TextMosq">
+        <span class="TextMosque">
+          در سراسر <span class="PrimaryColor">ایران</span>، <br />
+          <span class="PrimaryColor">ملک</span> مورد نظر خود را پیدا کنید
+        </span>
+
+        <div class="DeskMosque">
+          فقط با چند کلیک در هر جایی از ایران میتوانید ملک خود را پیدا کنید.
+        </div>
+        <div class="">
+          <button class="BtnSearchMelk">جستجو املاک</button>
+        </div>
+      </div>
+    </div>
+    <!-- section  -->
+
+    <!-- section  -->
+    <div class="">
+      <h2 class="NewestMelk">جدیدترین مقالات</h2>
+      <div class="P_WrapperAllMelks">
+        <!-- carousel  -->
+        <div class="ArrowLeft swiper-button-next swiper-navBtn">
+          <img src="assets/images/ArrowLeft.svg" alt="" />
+        </div>
+        <div class="ArrowRight swiper-button-prev swiper-navBtn">
+          <img src="assets/images/ArrowRight.svg" alt="" />
+        </div>
+        <div class="WrapperAllMelks slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <!-- Articles  -->
+              <div class="Articles swiper-slide">
+                <div class="P_ImgHouse">
+                  <img
+                    src="assets/images/Articles.png"
+                    class="ImgHouse"
+                    alt=""
+                  />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">معیارهای خرید ملک</div>
+                </div>
+                <div class="DetailArticle">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربردی می
+                  شود
+                </div>
+              </div>
+              <!-- Articles  -->
+              <div class="Articles swiper-slide">
+                <div class="P_ImgHouse">
+                  <img
+                    src="assets/images/Articles.png"
+                    class="ImgHouse"
+                    alt=""
+                  />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">معیارهای خرید ملک</div>
+                </div>
+                <div class="DetailArticle">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربردی می
+                  شود
+                </div>
+              </div>
+              <!-- Articles  -->
+              <div class="Articles swiper-slide">
+                <div class="P_ImgHouse">
+                  <img
+                    src="assets/images/Articles.png"
+                    class="ImgHouse"
+                    alt=""
+                  />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">معیارهای خرید ملک</div>
+                </div>
+                <div class="DetailArticle">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربردی می
+                  شود
+                </div>
+              </div>
+                <!-- Articles  -->
+                <div class="Articles swiper-slide">
+                  <div class="P_ImgHouse">
+                    <img
+                      src="assets/images/Articles.png"
+                      class="ImgHouse"
+                      alt=""
+                    />
+                  </div>
+                  <div class="P_TypeHouse">
+                    <div class="TypeHouse Flex1">معیارهای خرید ملک</div>
+                  </div>
+                  <div class="DetailArticle">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                    مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربردی می
+                    شود
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section  -->
+
+    <!-- section  -->
+    <div class="P_Family">
+      <div class="Flex1 PTextFam">
+        <div class="Barrasi"><span class="PrimaryColor">بررسی</span> کنید</div>
+        <div class="Barrasi1">
+          <span class="PrimaryColor">مقایسه</span> کنید
+        </div>
+        <div class="Barras2"><span class="PrimaryColor">انتخاب</span> کنید</div>
+        <div class="DirbazText">
+          دیرباز این امکان را به شما میدهد که در سریعترین زمان ممکن ملک خود را
+          پیدا کنید و از ملک مورد نظر دیدن کنید
+        </div>
+      </div>
+      <div class="PImg">
+        <img src="assets/images/Family.png" class="ImgFam" alt="" />
+      </div>
+    </div>
+    <!-- section  -->
+
+    <!-- Start Footer  -->
+    <div class="Footer">
+      <div class="P_ColFooter">
+        <div class="ColFooter MW_460">
+          <div class="Address">
+            <img src="assets/images/address.svg" class="ImgAddress" alt="" />
+            آدرس:
+          </div>
+          <div class="AddressNumOne">دفتر شماره یک:</div>
+          شیراز، روبروی شهرک گلستان، مجتمع بزرگ تجاری-تفریخی خلیج فارس، طبقه سوم
+          جنوب غربی (VIP)، اتاق ۳
+          <div class="AddressNumOne">دفتر شماره دو:</div>
+          شیراز، شهرک گلستان، بلوار پیام نور، خیابان فرش نشانی، کوچه پنج،‌پلاک
+          سوم، طبقه سه
+        </div>
+        <div class="ColFooter">
+          <div class="Address1">
+            <img src="assets/images/telephone.svg" class="ImgAddress" alt="" />
+            تلفن تماس:
+          </div>
+          98-917-711-8618+
+          <div class="Address1 Mt20">
+            <img src="assets/images/CodePosti.svg" class="ImgAddress" alt="" />
+            کد پستی
+          </div>
+          7189471547
+          <div class="Address1 Mt20">
+            <img src="assets/images/PostElec.svg" class="ImgAddress" alt="" />
+            پست الکترونیک:
+          </div>
+          info@gmail.com
+        </div>
+        <div class="ColFooter">
+          <div class="Address2 Pointer">جدیدترین اخبار</div>
+          <div class="Address2 Pointer Mt20">آپارتمان</div>
+          <div class="Address2 Pointer Mt20">خانه ویلایی</div>
+          <div class="Address2 Pointer Mt20">مغازه</div>
+        </div>
+        <div class="ColFooter">
+          <div class="Address2 Pointer">قوانین و مقررات</div>
+          <div class="Address2 Pointer Mt20">درباره دیرباز</div>
+          <div class="Address2 Pointer Mt20">سوالات متداول</div>
+        </div>
+      </div>
+      <div class="DownOfFooter">
+        <div class="FollowUsSocial">ما را در شبکه های اجتماعی دنبال کنید</div>
+        <div class="IconFooter">
+          <div class="P_10">
+            <img src="assets/images/telegram.svg" alt="" />
+          </div>
+          <div class="P_10">
+            <img src="assets/images/twitter.svg" alt="" />
+          </div>
+          <div class="P_10">
+            <img src="assets/images/instagram.svg" alt="" />
+          </div>
+          <div class="P_10">
+            <img src="assets/images/facebook.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Body -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- end footer  -->
+  </body>
+</html>
