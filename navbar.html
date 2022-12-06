@@ -9,25 +9,64 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <!-- NavBar -->
-    <div class="Navbar">
-      <div class="Menu">
+     <!-- NavBar -->
+     <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="#">
         <img src="assets/images/logo.png" class="LogoNav" alt="لوگو دیرباز" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link MenuItem py-2 px-1 mx-3 MenuItemActive" href="#">صفحه اصلی</span></a>
+          </li>
+          
+          <li class="nav-item dropdown MenuItem">
+            <a class="nav-link dropdown-toggle py-2 px-1 mx-3 UnsetColor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              وبلاگ
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3 MenuItem" href="#">قوانین و مقررات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3  MenuItem" href="#">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3  MenuItem" href="#">تماس با ما</a>
+          </li>
+        </ul>
+        <div class="P_Enetr">
+          <div class="PosRel">
+            <img src="assets/images/search.svg" class="SearchIcon" id="SearchNavbar" alt="Search" />
 
-        <div class="MenuItem MenuItemActive">صفحه اصلی</div>
-        <div class="MenuItem">وبلاگ
-            <img src="assets/images/ArrowNav.svg" class="ArrowNav" alt="Arrow">
+            <div class="P_Inputss DisNone">
+              <input type="text" class="DirbazInp" placeholder="شماره پرونده یا محدوده آدرس ملک">
+              <div class="P_SearchPri d-flex align-items-center justify-content-center">
+                <img src="assets/images/searchwhite.svg"  alt="">
+              </div>
+              <img src="assets/images/close primary.svg" id="CloseSeach" class="CloseIcon" alt="">
+            </div>
+            <button class="btn EnetrBtn">ورود / ثبت نام</button>
+            
+          </div>
+  
         </div>
-        <div class="MenuItem">قوانین و مقررات</div>
-        <div class="MenuItem">درباره ما</div>
-        <div class="MenuItem">تماس با ما</div>
-      </div>
-      <div class="P_Enetr">
-        <img src="assets/images/search.svg" class="SearchIcon" alt="Search">
 
-        <button class="EnetrBtn">ورود / ثبت نام</button>
       </div>
-    </div>
+      
+      </div>
+    </nav>
     <!-- End NavBar  -->
   </body>
 </html>
