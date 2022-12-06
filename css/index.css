@@ -49,31 +49,43 @@
 
 .Navbar {
   background-color: white;
-  display: flex;
-  align-items: center;
   z-index: 10000;
-  justify-content: space-between;
-  padding: 37px 60px 10px 60px;
+  padding: 17px 60px 10px 60px;
   /* position: sticky; */
   top: 0;
   left: 0;
 }
 .LogoNav {
   width: 154px;
-  margin-left: 76px;
+  margin-left: 30px;
 }
 .Menu {
   display: flex;
   align-items: center;
 }
+.P_Enetr{
+  position: absolute;
+  left: 40px;
+  top: 30px;
+}
+.row {
+  margin: 0 !important;
+}
+.row >*{
+  padding: 0 !important;
+}
+.dropdown-toggle::after{
+  color: var(--Primary_500) !important;
+}
 .MenuItem {
   font-size: 19px;
   font-weight: 400;
-  color: var(--Secondary_700);
+  color: var(--Secondary_700) !important;
   cursor: pointer;
   position: relative;
-  padding: 8px 3px;
-  margin: 0 15px;
+}
+.UnsetColor{
+  color: unset !important;
 }
 .MenuItemActive {
   font-size: 24px;
@@ -113,24 +125,23 @@
 }
 
 .EnetrBtn {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--Primary_500);
-  width: 291px;
-  height: 65px;
-  /* $-secondary-50 */
-  background: var(--Secondary_50);
-  /* $-primary-200 */
-  border: 1px solid var(--Primary_200);
-  box-shadow: 0px 21px 17px -9px rgba(56, 56, 56, 0.25);
-  border-radius: 8px;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: var(--Primary_500) !important;
+  width: 193px;
+  height: 53px;
+  background: var(--Secondary_50) !important;
+  border: 1px solid var(--Primary_200) !important;
+  box-shadow: 0px 21px 17px -9px rgb(56 56 56 / 25%);
+  border-radius: 8px !important;
   cursor: pointer;
 }
 .SearchIcon {
   position: relative;
   top: 3px;
-  left: 46px;
+  left: 15px;
   cursor: pointer;
+  width: 30px;
 }
 .ArrowNav {
   position: relative;
@@ -154,8 +165,7 @@
 .TitleBanner {
   color: var(--Secondary_700);
   font-weight: 900;
-  font-size: 53px;
-  line-height: 96px;
+  line-height: 76px !important;
   font-family: DanaBold;
 }
 .TitleBanner span {
@@ -176,7 +186,7 @@
   background-color: #f5f5f5;
   color: var(--Secondary_800);
   padding: 0px 24px;
-  height: 65px;
+  height: 50px;
   font-size: 18px;
   font-weight: 500;
   width: 100%;
@@ -214,11 +224,9 @@ input::placeholder,
 
   border: 1px solid #5c7677;
   border-radius: 16px;
-  padding: 36px 32px;
+  /* padding: 36px 32px; */
 }
 .TitleSections {
-  font-size: 35px;
-  font-weight: 700;
   text-align: center;
   font-family: DanaBold;
   color: var(--Secondary_700);
@@ -238,7 +246,7 @@ input::placeholder,
   color: var(--Primary_500);
   width: 160px;
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
   border: 1.5px solid var(--Primary_200);
   cursor: pointer;
 }
@@ -305,7 +313,6 @@ input::placeholder,
   justify-content: center;
 }
 .ComponentMelk {
-  margin: 0 81px;
 }
 .D_Flex {
   display: flex;
@@ -314,7 +321,6 @@ input::placeholder,
   border: 4px solid #7a9d9f;
   border-radius: 16px;
   margin-top: 32px;
-  display: flex;
 }
 .Sites {
   width: 523px;
@@ -330,9 +336,17 @@ input::placeholder,
   position: relative;
   left: 4px;
 }
+.TypeMelk{
+  font-weight: 600;
+  position: relative;
+  top: 3px;
+  font-size: 12px;
+}
+.t_melk{
+  font-weight: 500;
+}
 .TitleSite {
   font-weight: 700;
-  font-size: 19px;
   font-family: DanaBold;
   width: 100%;
   background: var(--Secondary_300);
@@ -442,18 +456,24 @@ input::placeholder,
   top: 17px;
   cursor: pointer;
 }
+.ArrowSelect1 {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  cursor: pointer;
+}
 .Pointer {
   cursor: pointer;
 }
 .ListSlect {
   position: absolute;
-  top: 39px;
+  top: 43px;
   padding: 7px 24px 7px 0;
   font-size: 18px;
   font-weight: 500;
   z-index: 100;
   left: 0;
-  width: 101%;
+  width: 100%;
   border-radius: 0 0 8px 8px;
   background-color: #f5f5f5;
   border: 2px solid var(--Primary_400);
@@ -477,7 +497,14 @@ input::placeholder,
   font-size: 35px;
   color: var(--Secondary_700);
   text-align: center;
-  margin-top: 100px;
+  margin-right: 130px;
+}
+.SeeAll{
+  color: var(--Primary_500);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 130px;
 }
 .P_ImgHouse {
   width: 100%;
@@ -625,7 +652,6 @@ input::placeholder,
   z-index: 10;
 }
 .P_Mosque{
-  display: flex;
   width: 100%;
   align-items: center;
   margin-top: 100px;
@@ -668,11 +694,12 @@ input::placeholder,
 .P_TextMosq{
   padding-right: 30px;
   margin-top: 40px;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
 }
 .P_Family{
-  display: flex;
-  align-items: center;
-  padding-right: 247px;
+ 
+  /* padding-right: 247px; */
 }
 .PImg{
 }
@@ -712,6 +739,7 @@ input::placeholder,
 .PTextFam{
   position: relative;
   top: 70px;
+  padding-right: 120px !important;
 }
 .Footer{
   background-color: var(--Secondary_700);
@@ -719,9 +747,9 @@ input::placeholder,
   margin-top: 127px;
 }
 .P_ColFooter{
-  display: flex;
-  justify-content: space-around;
-  padding: 54px 191px;
+  /* display: flex;
+  justify-content: space-around; */
+  padding: 54px 0px;
 }
 .Address{
   font-size: 22px;
@@ -777,9 +805,47 @@ input::placeholder,
 .P_10{
   padding: 10px;
 }
-
-
-
+.DirbazInp{
+  width: 100%;
+  border-radius: 6px;
+  background-color: white;
+  border: 2px solid var(--Primary_500);
+  height: 40px;
+  padding: 10px;
+}
+.DisNone{
+  display: none;
+}
+.P_SearchPri {
+  border-radius: 8px;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--Primary_500);
+  z-index: 100;
+  cursor: pointer;
+}
+.DirbazInp:focus{
+  outline: transparent;
+}
+.P_SearchPri > img {
+  width: 20px;
+}
+.P_Inputss{
+  position: absolute;
+  right: -360px;
+  width: 383px;
+  bottom: 6px;
+}
+.CloseIcon{
+  position: absolute;
+  left: 60px;
+  cursor: pointer;
+  top: 10px;
+  width: 17px;
+}
 
 
 
@@ -907,7 +973,41 @@ input::placeholder,
 .swiper-pagination-bullet-active{
   background-color: #4070F4;
 }
-
+.SelectArea{
+  width: calc(100% - 88px);
+  position: absolute;
+  top: -1px;
+  z-index: 100;
+  height: fit-content;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid var(--Primary_500);
+  right: 0;
+  padding: 10px 10px 100px 10px;
+}
+.LabelForm{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 7px;
+  color: var(--Secondary_800);
+}
+.MainInput{
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid var(--Primary_500);
+  padding: 10px;
+}
+.MainInput:focus{
+  outline: none;
+}
+.W_60{
+  width: 60%;
+}
+.W_80{
+  width: 80%;
+}
 @media screen and (max-width: 768px) {
   .slide-content{
     margin: 0 10px;

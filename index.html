@@ -11,48 +11,104 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+   
   </head>
   <body>
     <!-- NavBar -->
-    <div class="Navbar">
-      <div class="Menu">
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" class="LogoNav" alt="لوگو دیرباز" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link MenuItem py-2 px-1 mx-3 MenuItemActive" href="#">صفحه اصلی</span></a>
+          </li>
+          
+          <li class="nav-item dropdown MenuItem">
+            <a class="nav-link dropdown-toggle py-2 px-1 mx-3 UnsetColor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              وبلاگ
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3 MenuItem" href="#">قوانین و مقررات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3  MenuItem" href="#">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3  MenuItem" href="#">تماس با ما</a>
+          </li>
+        </ul>
+        <div class="P_Enetr">
+          <div class="PosRel">
+            <img src="assets/images/search.svg" class="SearchIcon" id="SearchNavbar" alt="Search" />
+
+            <div class="P_Inputss DisNone">
+              <input type="text" class="DirbazInp" placeholder="شماره پرونده یا محدوده آدرس ملک">
+              <div class="P_SearchPri d-flex align-items-center justify-content-center">
+                <img src="assets/images/searchwhite.svg"  alt="">
+              </div>
+              <img src="assets/images/close primary.svg" id="CloseSeach" class="CloseIcon" alt="">
+            </div>
+            <button class="btn EnetrBtn">ورود / ثبت نام</button>
+            
+          </div>
+  
+        </div>
+
+      </div>
+      
+      </div>
+    </nav>
+    <!-- <div class="Navbar d-flex align-items-center justify-content-between">
+      <div class=" d-flex align-items-center">
         <img src="assets/images/logo.png" class="LogoNav" alt="لوگو دیرباز" />
 
-        <div class="MenuItem MenuItemActive">صفحه اصلی</div>
-        <div class="MenuItem">
+        <div class="MenuItem py-2 px-1 mx-3 MenuItemActive">صفحه اصلی</div>
+        <div class="MenuItem py-2 px-1 mx-3">
           وبلاگ
           <img src="assets/images/ArrowNav.svg" class="ArrowNav" alt="Arrow" />
         </div>
-        <div class="MenuItem">قوانین و مقررات</div>
-        <div class="MenuItem">درباره ما</div>
-        <div class="MenuItem">تماس با ما</div>
+        <div class="MenuItem py-2 px-1 mx-3">قوانین و مقررات</div>
+        <div class="MenuItem py-2 px-1 mx-3">درباره ما</div>
+        <div class="MenuItem py-2 px-1 mx-3">تماس با ما</div>
       </div>
       <div class="P_Enetr">
         <img src="assets/images/search.svg" class="SearchIcon" alt="Search" />
 
-        <button class="EnetrBtn">ورود / ثبت نام</button>
+        <button class="btn EnetrBtn">ورود / ثبت نام</button>
       </div>
-    </div>
+    </div> -->
     <!-- End NavBar  -->
 
     <!-- Body -->
 
     <!-- Banner  -->
-    <div class="BannerWrapper">
-      <div class="TitleBannerWrapper">
+    <div class="row align-items-center">
+      <div class="col-7 px-5 col-7">
         <!-- h  -->
-        <h1 class="TitleBanner"> <span class="Primary_500">ملک</span> مورد نیاز خود را </br>
+        <h1 class="TitleBanner h1"> <span class="Primary_500">ملک</span> مورد نیاز خود را </br>
           <span class="MoveToLeft">
             <span class="Primary_500"> در سریع ترین زمان </span> ممکن پیدا کنید 
           </span>
@@ -64,7 +120,7 @@
         </div>
         <!-- h  -->
       </div>
-      <div class="Flex1">
+      <div class="col-5 ">
         <img
           src="assets/images/header pic 1.png"
           class="ImageBanner"
@@ -75,21 +131,23 @@
     <!-- End Banner  -->
 
     <!-- Map Area  -->
-    <div class="MapArea">
-      <h3 class="TitleSections">جستجو پیشرفته و سریع ملک</h3>
+    <div class="MapArea py-4 px-1">
+      <h3 class="TitleSections h2">جستجو پیشرفته و سریع ملک</h3>
       <div class="DeskTitle">
         برای پیدا کردن ملک خود میتوانید فیلد های زیر را پر کنید و یا از روی نقشه
         منطقه مورد نظر خود را انتخاب کنید.
       </div>
 
-      <div class="ComponentMelk">
+      <div class="ComponentMelk mx-5">
         <div class="P_ItemFilter">
           <div class="FilterMelk FilterMelk_Active">مسکونی</div>
           <div class="FilterMelk">تجاری</div>
           <div class="FilterMelk">زمین</div>
+
+          
         </div>
-        <div class="P_AreaFormMelk">
-          <div class="AreaFormMelk Flex1">
+        <div class="P_AreaFormMelk PosRel">
+          <div class="AreaFormMelk Flex1" id="FormArea">
             <input
               type="text"
               class="InputMelk Flex1"
@@ -106,28 +164,7 @@
                 class="ArrowSelect"
                 alt="arrow"
               />
-              <div class="ListSlect RadioGroup DisNone">
-                <div class="ItemSelect">
-                  <span onclick="RadioButton(0)">
-                    <img
-                      src="assets/images/check.svg"
-                      class="ImgCheck"
-                      alt="check"
-                    />
-                    <span class="TextCheck">اجاره</span>
-                  </span>
-                </div>
-                <div class="ItemSelect">
-                  <span onclick="RadioButton(1)">
-                    <img
-                      src="assets/images/check.svg"
-                      class="ImgCheck"
-                      alt="check"
-                    />
-                    <span class="TextCheck">فروش</span>
-                  </span>
-                </div>
-              </div>
+             
             </span>
 
             <span class="PosRel">
@@ -153,25 +190,337 @@
               placeholder="تعداد اتاق"
             />
           </div>
-          <div class="D_Flex">
-            <button class="BtnMelk">
+          <div class="d-flex">
+            <button class="BtnMelk" id="SearchMelks">
               <img src="assets/images/searchwhite.svg" alt="search" />
             </button>
-            <button class="BtnMelk Se_Bg_50">
+            <button class="BtnMelk Se_Bg_50" id="CategoryMelks">
               <img src="assets/images/melk.svg" alt="melk" />
             </button>
           </div>
+
+          <div class="SelectArea DisNone" id="SelectArea">
+              <div>
+                <input type="text" class="MainInput" placeholder="شماره پرونده یا محدوده آدرس ملک">
+              </div>
+              <div class="row justify-content-between">
+                <div class="col-4 ">
+                  <div >
+                    <label for="" class="LabelForm">نوع قرارداد:</label>
+                    <div class="PosRel W_80" id="P_TypeGharadad">
+                      <input type="text" class="MainInput" placeholder="نوع قرارداد" onclick="ShowSelectBox('TypeGharadad')">
+                      <img
+                          src="assets/images/ArrowNav.svg"
+                          class="ArrowSelect1"
+                          alt="arrow"
+                        />
+                        <div class="ListSlect RadioGroup DisNone" id="TypeGharadad" >
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Ejareh')" id="Ejareh">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck">اجاره</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Forush')" id="Sell">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >فروش</span>
+                            </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="" class="LabelForm">قیمت فروش:</label>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <input type="number" class="MainInput" placeholder="کمینه قیمت" >
+                      <div class="px-2">تا</div>
+                      <input type="number" class="MainInput" placeholder="بیشینه قیمت" >
+                    </div>
+                  </div>
+                  <div >
+                    <label for="" class="LabelForm">انباری:</label>
+                    <div class="PosRel W_80" id="P_Warehouse">
+                      <input type="text" class="MainInput" placeholder="انباری" onclick="ShowSelectBox('Warehouse')">
+                      <img
+                          src="assets/images/ArrowNav.svg"
+                          class="ArrowSelect1"
+                          alt="arrow"
+                        />
+                        <div class="ListSlect RadioGroup DisNone" id="Warehouse" >
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('WarehouseDarad')" id="WarehouseDarad">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck">دارد</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('WarehouseNadarad')" id="WarehouseNadarad">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >ندارد</span>
+                            </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+             
+                </div>
+                <div class="col-4 px-5 ">
+                  <div >
+                    <label for="" class="LabelForm">نوع کاربری:</label>
+                    <div class="PosRel W_80" id="P_TypeUse">
+                      <input type="text" class="MainInput" placeholder="نوع کاربری " onclick="ShowSelectBox('TypeUse')">
+                      <img
+                          src="assets/images/ArrowNav.svg"
+                          class="ArrowSelect1"
+                          alt="arrow"
+                        />
+                        <div class="ListSlect RadioGroup DisNone" id="TypeUse" >
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Maskoni')" id="Maskoni">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck">مسکونی</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Tejary')" id="Tejary">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >تجاری</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Amozeshi')" id="Amozeshi">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >آموزشی</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Varzeshi')" id="Varzeshi">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >ورزشی</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('ProfesinalTeach')" id="ProfesinalTeach">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck fs-6" >آموزش حرفه ای و عالی</span>
+                            </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="" class="LabelForm">تعداد اتاق:</label>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <input type="number" class="MainInput" placeholder="حداقل تعداد" >
+                      <div class="px-2">تا</div>
+                      <input type="number" class="MainInput" placeholder="حداکثر تعداد" >
+                    </div>
+                  </div>
+                  <div >
+                    <label for="" class="LabelForm">پارکینگ:</label>
+                    <div class="PosRel W_80" id="P_Parking">
+                      <input type="text" class="MainInput" placeholder="پارکینگ" onclick="ShowSelectBox('Parking')">
+                      <img
+                          src="assets/images/ArrowNav.svg"
+                          class="ArrowSelect1"
+                          alt="arrow"
+                        />
+                        <div class="ListSlect RadioGroup DisNone" id="Parking" >
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('ParkingDarad')" id="ParkingDarad">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck">دارد</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('ParkingNadarad')" id="ParkingNadarad">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >ندارد</span>
+                            </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+             
+                </div>
+                <div class="col-4  ">
+                  <div >
+                    <label for="" class="LabelForm">نوع ملک:</label>
+                    <div class="PosRel W_80" id="P_TypeHouse">
+                      <input type="text" class="MainInput" placeholder="نوع ملک" onclick="ShowSelectBox('TypeHouse')">
+                      <img
+                          src="assets/images/ArrowNav.svg"
+                          class="ArrowSelect1"
+                          alt="arrow"
+                        />
+                        <div class="ListSlect RadioGroup DisNone" id="TypeHouse" >
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Zamin')" id="Zamin">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck">زمین</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Aparteman')" id="Aparteman">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >آپارتمان</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Kolangi')" id="Kolangi">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >خانه کلنگی</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('VilaeeHouse')" id="VilaeeHouse">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >خانه ویلایی</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Vilaee')" id="Vilaee">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck fs-6" >ویلایی</span>
+                            </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="" class="LabelForm">مساحت ملک:</label>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <input type="number" class="MainInput" placeholder="حداقل متر مربع" >
+                      <div class="px-2">تا</div>
+                      <input type="number" class="MainInput" placeholder="حداکثر متر مربع" >
+                    </div>
+                  </div>
+                  <div >
+                    <label for="" class="LabelForm">آسانسور:</label>
+                    <div class="PosRel W_80" id="P_Elevator">
+                      <input type="text" class="MainInput" placeholder="آسانسور" onclick="ShowSelectBox('Elevator')">
+                      <img
+                          src="assets/images/ArrowNav.svg"
+                          class="ArrowSelect1"
+                          alt="arrow"
+                        />
+                        <div class="ListSlect RadioGroup DisNone" id="Elevator" >
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Darad')" id="Darad">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck">دارد</span>
+                            </span>
+                          </div>
+                          <div class="ItemSelect">
+                            <span onclick="RadioButton('Nadarad')" id="Nadarad">
+                              <img
+                                src="assets/images/check.svg"
+                                class="ImgCheck"
+                                alt="check"
+                              />
+                              <span class="TextCheck" >ندارد</span>
+                            </span>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+             
+                </div>
+              </div>
+          </div>
         </div>
 
-        <div class="P_Map">
+        <div class="P_Map d-flex">
           <div class="AreaMap"></div>
           <div class="Sites">
-            <div class="TitleSite">ملک های پیدا شده</div>
+            <div class="TitleSite h5">ملک های پیدا شده</div>
             <div class="WrapperAllSites">
               <!-- item site  -->
               <div class="SignleSite">
                 <div class="Flex1">
-                  <div class="SellTitle">قرار داد فروش</div>
+                  <div >
+                    <div class="SellTitle d-flex align-items-center justify-content-between px-3">
+                      <div>
+                      قرار داد فروش
+
+                      </div>
+                      <div class="TypeMelk h6"><span class="t_melk">نوع ملک :</span> اپارتمانی </div>
+
+                    </div>
+                  </div>
+                  <!-- <div class="SellTitle">قرار داد فروش</div> -->
                   <div class="P_Detail">
                     <!-- first Col  -->
                     <div class="Col_Detail">
@@ -236,7 +585,16 @@
               <!-- item site  -->
               <div class="SignleSite">
                 <div class="Flex1">
-                  <div class="SellTitle">قرار داد فروش</div>
+                  <div >
+                    <div class="SellTitle d-flex align-items-center justify-content-between px-3">
+                      <div>
+                      قرار داد فروش
+
+                      </div>
+                      <div class="TypeMelk h6"><span class="t_melk">نوع ملک :</span> اپارتمانی </div>
+
+                    </div>
+                  </div>
                   <div class="P_Detail">
                     <!-- first Col  -->
                     <div class="Col_Detail">
@@ -301,7 +659,16 @@
               <!-- item site  -->
               <div class="SignleSite">
                 <div class="Flex1">
-                  <div class="SellTitle">قرار داد فروش</div>
+                  <div >
+                    <div class="SellTitle d-flex align-items-center justify-content-between px-3">
+                      <div>
+                      قرار داد فروش
+
+                      </div>
+                      <div class="TypeMelk h6"><span class="t_melk">نوع ملک :</span> اپارتمانی </div>
+
+                    </div>
+                  </div>
                   <div class="P_Detail">
                     <!-- first Col  -->
                     <div class="Col_Detail">
@@ -369,8 +736,11 @@
       </div>
     </div>
     <!-- End Map Area  -->
-    <div>
-      <h2 class="NewestMelk">جدیدترین املاک</h2>
+    <div class="pt-5">
+      <div class="d-flex mt-5 justify-content-between align-items-center">
+        <h2 class="NewestMelk">جدیدترین املاک</h2>
+        <div class="SeeAll">مشاهده همه</div>
+      </div>
       <div class="P_WrapperAllMelks">
         <!-- carousel  -->
         <div class="ArrowLeft swiper-button-next swiper-navBtn">
@@ -598,11 +968,11 @@
       </div>
     </div>
     <!-- section  -->
-    <div class="P_Mosque">
-      <div class="P_ImgMosque">
+    <div class="row align-items-center">
+      <div class="P_ImgMosque col-6">
         <img src="assets/images/mosque.png" class="ImgMosque" alt="" />
       </div>
-      <div class="P_TextMosq">
+      <div class="P_TextMosq col-6  mr-5">
         <span class="TextMosque">
           در سراسر <span class="PrimaryColor">ایران</span>، <br />
           <span class="PrimaryColor">ملک</span> مورد نظر خود را پیدا کنید
@@ -619,8 +989,11 @@
     <!-- section  -->
 
     <!-- section  -->
-    <div class="">
-      <h2 class="NewestMelk">جدیدترین مقالات</h2>
+    <div class="pt-5">
+      <div class="d-flex mt-5 justify-content-between align-items-center">
+        <h2 class="NewestMelk">جدیدترین مقالات</h2>
+        <div class="SeeAll">مشاهده همه</div>
+      </div>
       <div class="P_WrapperAllMelks">
         <!-- carousel  -->
         <div class="ArrowLeft swiper-button-next swiper-navBtn">
@@ -720,8 +1093,8 @@
     <!-- section  -->
 
     <!-- section  -->
-    <div class="P_Family">
-      <div class="Flex1 PTextFam">
+    <div class="P_Family row align-items-center">
+      <div class=" PTextFam col-6">
         <div class="Barrasi"><span class="PrimaryColor">بررسی</span> کنید</div>
         <div class="Barrasi1">
           <span class="PrimaryColor">مقایسه</span> کنید
@@ -732,7 +1105,7 @@
           پیدا کنید و از ملک مورد نظر دیدن کنید
         </div>
       </div>
-      <div class="PImg">
+      <div class="PImg col-5">
         <img src="assets/images/Family.png" class="ImgFam" alt="" />
       </div>
     </div>
@@ -740,8 +1113,8 @@
 
     <!-- Start Footer  -->
     <div class="Footer">
-      <div class="P_ColFooter">
-        <div class="ColFooter MW_460">
+      <div class="P_ColFooter row justify-content-around">
+        <div class="col-3 ColFooter MW_460">
           <div class="Address">
             <img src="assets/images/address.svg" class="ImgAddress" alt="" />
             آدرس:
@@ -753,7 +1126,7 @@
           شیراز، شهرک گلستان، بلوار پیام نور، خیابان فرش نشانی، کوچه پنج،‌پلاک
           سوم، طبقه سه
         </div>
-        <div class="ColFooter">
+        <div class="col-1 ColFooter">
           <div class="Address1">
             <img src="assets/images/telephone.svg" class="ImgAddress" alt="" />
             تلفن تماس:
@@ -770,13 +1143,13 @@
           </div>
           info@gmail.com
         </div>
-        <div class="ColFooter">
+        <div class="col-1 ColFooter">
           <div class="Address2 Pointer">جدیدترین اخبار</div>
           <div class="Address2 Pointer Mt20">آپارتمان</div>
           <div class="Address2 Pointer Mt20">خانه ویلایی</div>
           <div class="Address2 Pointer Mt20">مغازه</div>
         </div>
-        <div class="ColFooter">
+        <div class="col-1 ColFooter">
           <div class="Address2 Pointer">قوانین و مقررات</div>
           <div class="Address2 Pointer Mt20">درباره دیرباز</div>
           <div class="Address2 Pointer Mt20">سوالات متداول</div>
@@ -784,7 +1157,7 @@
       </div>
       <div class="DownOfFooter">
         <div class="FollowUsSocial">ما را در شبکه های اجتماعی دنبال کنید</div>
-        <div class="IconFooter">
+        <div class="pb-2 d-flex align-items-center justify-content-center user-select-auto">
           <div class="P_10">
             <img src="assets/images/telegram.svg" alt="" />
           </div>
@@ -801,6 +1174,12 @@
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
     <!-- End Body -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
