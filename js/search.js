@@ -1,49 +1,3 @@
-const P_SelectInput = document.querySelector(".P_SelectInput");
-const RadioGoroup = document.querySelector(".RadioGroup");
-const ImagesChecked = RadioGoroup.querySelectorAll(".ImgCheck");
-const ItemSelect = RadioGoroup.querySelectorAll(".ItemSelect");
-const WrapperAllMelks = document.querySelector(".WrapperAllMelks");
-const ArrowRight = document.querySelector(".ArrowRight");
-const CloseSeach = document.querySelector("#CloseSeach");
-
-
-
-var LeftSlider = 300;
-
-
- 
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 4,
-  spaceBetween: 25,
-  loop: true,
-  centerSlide: 'true',
-  fade: 'true',
-  grabCursor: 'true',
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints:{
-      0: {
-          slidesPerView: 1,
-      },
-      520: {
-          slidesPerView: 2,
-      },
-      950: {
-          slidesPerView: 3,
-      },
-      1950: {
-        slidesPerView: 4,
-    },
-  },
-});
 
 
 
@@ -274,4 +228,15 @@ function ToggleForms (){
     $("#SearchMelks ").removeClass("DisNone");
   }
 }
+
+let Hearth = false;
+$("#Hearth").click(function(){
+  if(Hearth){
+    $("#Hearth").attr('src', '../assets/images/Hearth.svg')
+  }
+  else{
+    $("#Hearth").attr('src', '../assets/images/hearthfull.svg')
+  }
+  Hearth = !Hearth;
+})
 

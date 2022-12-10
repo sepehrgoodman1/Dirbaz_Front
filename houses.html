@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House</title>
+    <!-- my css  -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+     <!-- NavBar -->
+     <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" class="LogoNav" alt="لوگو دیرباز" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link MenuItem py-2 px-1 mx-3 MenuItemActive" href="#">صفحه اصلی</span></a>
+          </li>
+          
+          <li class="nav-item dropdown MenuItem">
+            <a class="nav-link dropdown-toggle py-2 px-1 mx-3 UnsetColor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              وبلاگ
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3 MenuItem" href="#">قوانین و مقررات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3  MenuItem" href="#">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-1 mx-3  MenuItem" href="#">تماس با ما</a>
+          </li>
+        </ul>
+        <div class="P_Enetr">
+          <div class="PosRel">
+            <img src="assets/images/search.svg" class="SearchIcon" id="SearchNavbar" alt="Search" />
+
+            <div class="P_Inputss DisNone">
+              <input type="text" class="DirbazInp" placeholder="شماره پرونده یا محدوده آدرس ملک">
+              <div class="P_SearchPri d-flex align-items-center justify-content-center">
+                <img src="assets/images/searchwhite.svg"  alt="">
+              </div>
+              <img src="assets/images/close primary.svg" id="CloseSeach" class="CloseIcon" alt="">
+            </div>
+            <button class="btn EnetrBtn">ورود / ثبت نام</button>
+            
+          </div>
+  
+        </div>
+
+      </div>
+      
+      </div>
+    </nav>
+    <!-- End NavBar  -->
+    <div class="mt-4 d-flex P_WrapperMelks">
+      <div class="FilterMelks py-4 px-3">
+        <div class="Bold h5">فیلتر بر اساس:</div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="TypeGharardad"
+          >
+            <div class="TypeGh py-3">نوع قرارداد:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_TypeGharardad" class="DisNone">
+            <div class="mb-3 Pointer" id="Ejareh">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> اجاره
+            </div>
+            <div class="mb-3 Pointer" id="Sell">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> فروش
+            </div>
+          </div>
+        </div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="PriceRage"
+          >
+            <div class="TypeGh py-3">قیمت فروش:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_PriceRage" class="DisNone">
+            <div class="d-flex align-items-center">
+              <div class="mb-3 Pointer">
+                <input type="text" class="MainInput" placeholder="کمینه قیمت" />
+              </div>
+              <div class="pb-3 Bold px-2">تا</div>
+              <div class="mb-3 Pointer">
+                <input
+                  type="text"
+                  class="MainInput"
+                  placeholder="بیشینه قیمت"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="TypeMelk"
+          >
+            <div class="TypeGh py-3">نوع ملک:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_TypeMelk" class="DisNone">
+            <div class="mb-3 Pointer" id="Zamin">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> زمین
+            </div>
+            <div class="mb-3 Pointer" id="Apartman">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> آپارتمان
+            </div>
+            <div class="mb-3 Pointer" id="Khaneh_kl">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> خانه
+              کلنگی
+            </div>
+            <div class="mb-3 Pointer" id="Khaneh_vl">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> خانه
+              ویلایی
+            </div>
+            <div class="mb-3 Pointer" id="Maghazeh">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> مغازه
+            </div>
+            <div class="mb-3 Pointer" id="Bagh">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> باغ
+            </div>
+            <div class="mb-3 Pointer" id="Soleh">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> سوله
+            </div>
+          </div>
+        </div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="TypeUsing"
+          >
+            <div class="TypeGh py-3">نوع کاربری:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_TypeUsing" class="DisNone">
+            <div class="mb-3 Pointer" id="Maskoni">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> مسکونی
+            </div>
+            <div class="mb-3 Pointer" id="Tejarys">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> تجاری
+            </div>
+            <div class="mb-3 Pointer" id="Amozeshi">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> آموزشی
+            </div>
+            <div class="mb-3 Pointer" id="Varzeshi">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> ورزشی
+            </div>
+            <div class="mb-3 Pointer" id="Amozesh_herf">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> آموزشی
+              حرفه ای و عالی
+            </div>
+            <div class="mb-3 Pointer" id="ManateghMas">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> مناطق
+              نظامی
+            </div>
+            <div class="mb-3 Pointer" id="SanAti">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> صنعتی
+            </div>
+            <div class="mb-3 Pointer" id="Keshavarzi">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> کشاورزی
+              و باغ
+            </div>
+            <div class="mb-3 Pointer" id="FazayeSabz">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> فضای سبز
+            </div>
+            <div class="mb-3 Pointer" id="Farhangi">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> فرهنگی ،
+              اماکن تاریخی و فرهنگی و مذهبی
+            </div>
+            <div class="mb-3 Pointer" id="Jahangardi">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> خدمات
+              جهانگردی و پذیرایی
+            </div>
+            <div class="mb-3 Pointer" id="Darmani">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> درمانی و
+              بهداشتی
+            </div>
+            <div class="mb-3 Pointer" id="Edari">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> اداری
+            </div>
+          </div>
+        </div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="MasahatMelk"
+          >
+            <div class="TypeGh py-3">مساحت ملک:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_MasahatMelk" class="DisNone">
+            <div class="d-flex align-items-center">
+              <div class="mb-3 Pointer">
+                <input
+                  type="text"
+                  class="MainInput"
+                  placeholder="حداقل متر مربع"
+                />
+              </div>
+              <div class="pb-3 Bold px-2">تا</div>
+              <div class="mb-3 Pointer">
+                <input
+                  type="text"
+                  class="MainInput"
+                  placeholder="حداکثر متر مربع"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="Asansor"
+          >
+            <div class="TypeGh py-3">آسانسور:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_Asansor" class="DisNone">
+            <div class="mb-3 Pointer" id="AsansorDarad">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> دارد
+            </div>
+            <div class="mb-3 Pointer" id="AsansorNaDarad">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> ندارد
+            </div>
+          </div>
+        </div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="Anbari"
+          >
+            <div class="TypeGh py-3">انباری:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_Anbari" class="DisNone">
+            <div class="mb-3 Pointer" id="AnbariDarad">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> دارد
+            </div>
+            <div class="mb-3 Pointer" id="AnbariNaDarad">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> ندارد
+            </div>
+          </div>
+        </div>
+        <div class="Filter">
+          <!-- title  -->
+          <div
+            class="d-flex align-items-center justify-content-between Pointer"
+            id="Parking"
+          >
+            <div class="TypeGh py-3">پارکینگ:</div>
+            <div>
+              <img src="assets/images/arrowDown.svg" alt="" />
+            </div>
+          </div>
+          <!-- options  -->
+          <div id="Op_Parking" class="DisNone">
+            <div class="mb-3 Pointer" id="ParkingDarad">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> دارد
+            </div>
+            <div class="mb-3 Pointer" id="ParkingNaDarad">
+              <img src="assets/images/check.svg" alt="" class="mx-1" /> ندارد
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Flex1 me-5">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="h4 Bold mt-3">ملک ها</div>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center">
+              <label class="LabelFilter ms-2">مرتب سازی بر اساس:</label>
+              <div class="">
+                <div class="PosRel W_80 Pointer" id="P_TypeUse">
+                  <input
+                    type="text"
+                    class="MainInput Pointer"
+                    placeholder="جدیدترین ها"
+                    onclick="ShowSelectBox('TypeUse')"
+                  />
+                  <img
+                    src="assets/images/ArrowNav.svg"
+                    class="ArrowSelect1"
+                    alt="arrow"
+                  />
+                  <div class="ListSlect RadioGroup DisNone" id="TypeUse">
+                    <div class="ItemSelect">
+                      <span onclick="RadioButton('Maskoni')" id="Maskoni">
+                        <img
+                          src="assets/images/check.svg"
+                          class="ImgCheck"
+                          alt="check"
+                        />
+                        <span class="TextCheck">مسکونی</span>
+                      </span>
+                    </div>
+                    <div class="ItemSelect">
+                      <span onclick="RadioButton('Tejary')" id="Tejary">
+                        <img
+                          src="assets/images/check.svg"
+                          class="ImgCheck"
+                          alt="check"
+                        />
+                        <span class="TextCheck">تجاری</span>
+                      </span>
+                    </div>
+                    <div class="ItemSelect">
+                      <span onclick="RadioButton('Amozeshi')" id="Amozeshi">
+                        <img
+                          src="assets/images/check.svg"
+                          class="ImgCheck"
+                          alt="check"
+                        />
+                        <span class="TextCheck">آموزشی</span>
+                      </span>
+                    </div>
+                    <div class="ItemSelect">
+                      <span onclick="RadioButton('Varzeshi')" id="Varzeshi">
+                        <img
+                          src="assets/images/check.svg"
+                          class="ImgCheck"
+                          alt="check"
+                        />
+                        <span class="TextCheck">ورزشی</span>
+                      </span>
+                    </div>
+                    <div class="ItemSelect">
+                      <span
+                        onclick="RadioButton('ProfesinalTeach')"
+                        id="ProfesinalTeach"
+                      >
+                        <img
+                          src="assets/images/check.svg"
+                          class="ImgCheck"
+                          alt="check"
+                        />
+                        <span class="TextCheck fs-6">آموزش حرفه ای و عالی</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center ms-3">
+              <label class="LabelFilter ms-3">نمایش بر اساس:</label>
+              <img
+                src="assets/images/ListShow.svg"
+                class="IconShowzDeActive ms-3 Pointer"
+                alt=""
+                id="List"
+              />
+              <img
+                src="assets/images/GridActive.svg"
+                class="IconShow Pointer"
+                alt=""
+                id="Grid"
+
+              />
+            </div>
+            <div class="WrapperBtn Pointer">
+              <div class="ListAndMap" id="ListBtn">لیست</div>
+              <div class="ListAndMap ListAndMap_Active" id="MapBtn">نقشه</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Map_Area" id="Map_Area"></div>
+
+        <div class="WrapperMelks pt-5 " id="WrapperMelks">
+          <!-- melk  -->
+          <div class="Melks">
+            <div class="P_ImgHouse">
+              <img src="assets/images/house.png" class="ImgHouse" alt="" />
+            </div>
+            <div class="P_TypeHouse">
+              <div class="TypeHouse Flex1">باغ شهری</div>
+              <div>
+                <img src="assets/images/heart.png" class="Pointer" alt="" />
+              </div>
+            </div>
+            <div class="Price">
+              13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+            </div>
+            <div class="P_DeateBuild">
+              <div class="C_DeateBuild">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/yearBuild.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//home.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />مساحت کل ملک:<span class="YearText">
+                    600 هزار متر مربع
+                  </span>
+                </div>
+              </div>
+              <div class="C_DeateBuild Mt6">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//bed.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />واحد اتاق:<span class="YearText"> 4 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/Location.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />آدرس:<span class="YearText">
+                    معالی آباد، خلبانان، کوچ 6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- melk  -->
+          <div class="Melks">
+            <div class="P_ImgHouse">
+              <img src="assets/images/house.png" class="ImgHouse" alt="" />
+            </div>
+            <div class="P_TypeHouse">
+              <div class="TypeHouse Flex1">باغ شهری</div>
+              <div>
+                <img src="assets/images/heart.png" class="Pointer" alt="" />
+              </div>
+            </div>
+            <div class="Price">
+              13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+            </div>
+            <div class="P_DeateBuild">
+              <div class="C_DeateBuild">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/yearBuild.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//home.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />مساحت کل ملک:<span class="YearText">
+                    600 هزار متر مربع
+                  </span>
+                </div>
+              </div>
+              <div class="C_DeateBuild Mt6">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//bed.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />واحد اتاق:<span class="YearText"> 4 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/Location.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />آدرس:<span class="YearText">
+                    معالی آباد، خلبانان، کوچ 6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- melk  -->
+          <div class="Melks">
+            <div class="P_ImgHouse">
+              <img src="assets/images/house.png" class="ImgHouse" alt="" />
+            </div>
+            <div class="P_TypeHouse">
+              <div class="TypeHouse Flex1">باغ شهری</div>
+              <div>
+                <img src="assets/images/heart.png" class="Pointer" alt="" />
+              </div>
+            </div>
+            <div class="Price">
+              13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+            </div>
+            <div class="P_DeateBuild">
+              <div class="C_DeateBuild">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/yearBuild.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//home.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />مساحت کل ملک:<span class="YearText">
+                    600 هزار متر مربع
+                  </span>
+                </div>
+              </div>
+              <div class="C_DeateBuild Mt6">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//bed.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />واحد اتاق:<span class="YearText"> 4 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/Location.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />آدرس:<span class="YearText">
+                    معالی آباد، خلبانان، کوچ 6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- melk  -->
+          <div class="Melks">
+            <div class="P_ImgHouse">
+              <img src="assets/images/house.png" class="ImgHouse" alt="" />
+            </div>
+            <div class="P_TypeHouse">
+              <div class="TypeHouse Flex1">باغ شهری</div>
+              <div>
+                <img src="assets/images/heart.png" class="Pointer" alt="" />
+              </div>
+            </div>
+            <div class="Price">
+              13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+            </div>
+            <div class="P_DeateBuild">
+              <div class="C_DeateBuild">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/yearBuild.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//home.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />مساحت کل ملک:<span class="YearText">
+                    600 هزار متر مربع
+                  </span>
+                </div>
+              </div>
+              <div class="C_DeateBuild Mt6">
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images//bed.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />واحد اتاق:<span class="YearText"> 4 </span>
+                </div>
+                <div class="Fs10 Fw400 Flex1">
+                  <img
+                    src="assets/images/Location.svg"
+                    class="IconYearBuild"
+                    alt=""
+                  />آدرس:<span class="YearText">
+                    معالی آباد، خلبانان، کوچ 6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination  -->
+        <div class="D_Flex align-items-center justify-content-center ltr my-5" id="Pagination">
+          <div class="f_IconNext IconDeative mx-1">
+            <img src="assets/images/NextIcon.svg" alt="" />
+          </div>
+          <div class="TextPages mx-2 Bold">1</div>
+          <div class="TextPages mx-2 Bold TextPages_Active">2</div>
+          <div class="TextPages mx-2 Bold">3</div>
+          <div class="TextPages mx-2 Bold">4</div>
+          <div>...</div>
+          <div class="TextPages mx-2 Bold">50</div>
+          <div class="IconNext mx-1">
+            <img src="assets/images/NextIcon.svg" alt="" />
+          </div>
+        </div>
+        <div class="wrapperListShow DisNone mt-4" id="ListShow">
+          <div
+            class="P_ListShow d-flex align-items-center justify-content-between ListShow mb-4"
+          >
+            <div class="d-flex align-items-center Color_Secondary_700">
+              <img src="assets/images/house.png" class="HouseImg" alt="" />
+              <div class=" h4">
+                <div class="Bold">باغ شهری</div>
+                <div class="Bold PriceList">13,000,000,000 <span class="Fs15">تومان</span></div>
+              </div>
+              <div class="me-4 mt-1">
+                <div class="YearBildText mb-3">
+                  <img src="assets/images/yearBuild.svg" class="ms-1" alt="" />سال ساخت
+                  بنا:<span class="Bold "> 1387 </span>
+                </div>
+                <div class="YearBildText mt-3">
+                  <img src="assets/images/bed.svg" class="ms-1" alt="" />واحد اتاق:<span class="Bold "> 4 </span>
+                </div>
+              </div>
+              <div class="me-4 mt-1">
+                <div class="YearBildText mb-3">
+                  <img src="assets/images/home.svg" class="ms-1" alt="" />مساحت کل ملک:<span class="Bold "> 600 هزار متر مربع </span>
+                </div>
+                <div class="YearBildText mt-3">
+                  <img src="assets/images/Location.svg" class="ms-1" alt="" />آدرس:<span class="Bold "> معالی آباد، خلبانان، کوچ 6 </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="assets/images/Hearth.svg" class="W24 Pointer ms-2" alt="" />
+            </div>
+          </div>
+          <div
+            class="P_ListShow d-flex align-items-center justify-content-between ListShow mb-4"
+          >
+            <div class="d-flex align-items-center Color_Secondary_700">
+              <img src="assets/images/house.png" class="HouseImg" alt="" />
+              <div class=" h4">
+                <div class="Bold">باغ شهری</div>
+                <div class="Bold PriceList">13,000,000,000 <span class="Fs15">تومان</span></div>
+              </div>
+              <div class="me-4 mt-1">
+                <div class="YearBildText mb-3">
+                  <img src="assets/images/yearBuild.svg" class="ms-1" alt="" />سال ساخت
+                  بنا:<span class="Bold "> 1387 </span>
+                </div>
+                <div class="YearBildText mt-3">
+                  <img src="assets/images/bed.svg" class="ms-1" alt="" />واحد اتاق:<span class="Bold "> 4 </span>
+                </div>
+              </div>
+              <div class="me-4 mt-1">
+                <div class="YearBildText mb-3">
+                  <img src="assets/images/home.svg" class="ms-1" alt="" />مساحت کل ملک:<span class="Bold "> 600 هزار متر مربع </span>
+                </div>
+                <div class="YearBildText mt-3">
+                  <img src="assets/images/Location.svg" class="ms-1" alt="" />آدرس:<span class="Bold "> معالی آباد، خلبانان، کوچ 6 </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="assets/images/Hearth.svg" class="W24 Pointer ms-2" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Footer  -->
+   <div class="Footer">
+    <div class="P_ColFooter row justify-content-around">
+      <div class="col-3 ColFooter MW_460">
+        <div class="Address">
+          <img src="assets/images/address.svg" class="ImgAddress" alt="" />
+          آدرس:
+        </div>
+        <div class="AddressNumOne">دفتر شماره یک:</div>
+        شیراز، روبروی شهرک گلستان، مجتمع بزرگ تجاری-تفریخی خلیج فارس، طبقه سوم
+        جنوب غربی (VIP)، اتاق ۳
+        <div class="AddressNumOne">دفتر شماره دو:</div>
+        شیراز، شهرک گلستان، بلوار پیام نور، خیابان فرش نشانی، کوچه پنج،‌پلاک
+        سوم، طبقه سه
+      </div>
+      <div class="col-1 ColFooter">
+        <div class="Address1">
+          <img src="assets/images/telephone.svg" class="ImgAddress" alt="" />
+          تلفن تماس:
+        </div>
+        98-917-711-8618+
+        <div class="Address1 Mt20">
+          <img src="assets/images/CodePosti.svg" class="ImgAddress" alt="" />
+          کد پستی
+        </div>
+        7189471547
+        <div class="Address1 Mt20">
+          <img src="assets/images/PostElec.svg" class="ImgAddress" alt="" />
+          پست الکترونیک:
+        </div>
+        info@gmail.com
+      </div>
+      <div class="col-1 ColFooter">
+        <div class="Address2 Pointer">جدیدترین اخبار</div>
+        <div class="Address2 Pointer Mt20">آپارتمان</div>
+        <div class="Address2 Pointer Mt20">خانه ویلایی</div>
+        <div class="Address2 Pointer Mt20">مغازه</div>
+      </div>
+      <div class="col-1 ColFooter">
+        <div class="Address2 Pointer">قوانین و مقررات</div>
+        <div class="Address2 Pointer Mt20">درباره دیرباز</div>
+        <div class="Address2 Pointer Mt20">سوالات متداول</div>
+      </div>
+    </div>
+    <div class="DownOfFooter">
+      <div class="FollowUsSocial">ما را در شبکه های اجتماعی دنبال کنید</div>
+      <div class="pb-2 d-flex align-items-center justify-content-center user-select-auto">
+        <div class="P_10">
+          <img src="assets/images/telegram.svg" alt="" />
+        </div>
+        <div class="P_10">
+          <img src="assets/images/twitter.svg" alt="" />
+        </div>
+        <div class="P_10">
+          <img src="assets/images/instagram.svg" alt="" />
+        </div>
+        <div class="P_10">
+          <img src="assets/images/facebook.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- jquery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script
+      src="js/bootstrap.bundle.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- End Body -->
+    <script src="js/navbar.js"></script>
+    <script src="js/houses.js"></script>
+  </body>
+</html>
