@@ -409,8 +409,6 @@ $("#Grid").click(function(){
   $("#Pagination").removeClass("DisNoneI");
 })
 
-
-
 $("#ListBtn").click(function(){
   $("#ListBtn").addClass("ListAndMap_Active");
   $("#Map_Area").addClass("DisNone");
@@ -420,5 +418,17 @@ $("#MapBtn").click(function(){
   $("#MapBtn").addClass("ListAndMap_Active");
   $("#ListBtn").removeClass("ListAndMap_Active");
   $("#Map_Area").removeClass("DisNone");
+})
 
+
+let Hearth = false;
+$(".HearthOnClick").click(function(){
+  if(Hearth){
+    $(this).attr('src', '../assets/images/Hearth.svg')
+  }
+  else{
+    $(this).attr('src', '../assets/images/hearthfull.svg')
+  }
+
+  Hearth = !Hearth;
 })

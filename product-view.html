@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- my css  -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="mx-5">
+      <div class="d-flex" style="margin-top: 100px">
+        <div class="DetailMelk">
+          <div class="P_NameMAlek">
+            <div class="NameMAlek">محمد رضا گلزار</div>
+            <div class="ConsultantMelk">مشاور املاک</div>
+            <img src="assets/images/Man.png" class="ManImage" alt="" />
+          </div>
+          <div class="h5 Bold mt-4">املاک ستارگان شیراز</div>
+          <div class="h6 Bold mt-3">
+            <img
+              src="assets/images/location pri.svg"
+              class="ms-2"
+              alt=""
+            />شیراز، معالی آباد، کسایی،کوچه6،
+          </div>
+          <div class="h6 Bold mt-3">
+            <img
+              src="assets/images/phone pri.svg"
+              class="ms-2"
+              alt=""
+            />09123456789
+          </div>
+          <div class="h6 Bold mt-3">
+            <img
+              src="assets/images/phoneOffice.svg"
+              class="ms-2"
+              alt=""
+            />021-234 567 89
+          </div>
+          <div class="h6 Bold mt-3">
+            <img
+              src="assets/images/site pri.svg"
+              class="ms-2"
+              alt=""
+            />www.mohammadrezagolzar.com
+          </div>
+          <div class="h6 Bold mt-3">
+            <img
+              src="assets/images/mail pri.svg"
+              class="ms-2"
+              alt=""
+            />golzar@gmail.com
+          </div>
+          <button class="Req_Hamkari mt-3">درخواست همکاری ملک</button>
+          <button class="Req_Hamkari mt-3">درخواست جزئیات ملک</button>
+          <button class="Req_Hamkari_BgPri mt-3">درخواست بازدید ملک</button>
+        </div>
+        <div class="Flex1 WrapperRightSection">
+          <div class="d-flex align-items-center">
+            <div class="Flex1">
+              <img src="assets/images/big house.png" class="Img_Home" alt="" />
+            </div>
+            <div class="Slider_RightSec"></div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center mt-5 Color_Secondary_700"
+          >
+            <h1 class="Bold h3">باغ شهری</h1>
+            <div class="TextDetailMelk">
+              <span>نوع قرارداد: <span class="Bold">فروش</span> </span>
+              <span class="mx-4">
+                نوع ملک: <span class="Bold">آپارتمان</span>
+              </span>
+              <span
+                ><img src="assets/images/calendar.svg" alt="" class="ImgCal" />
+                تاریخ ثبت:
+                <span class="Bold">1401/09/10</span>
+              </span>
+              <img
+                src="assets/images/Hearth.svg"
+                alt=""
+                class="ImgHearth"
+                id="Hearth"
+              />
+            </div>
+          </div>
+          <div class="h4 Bold mt-3">
+            13,000,000,000 <span class="Toman">تومان</span>
+          </div>
+          <div class="P_ItemFilter">
+            <div class="InfoMelk FilterMelk_Active" onclick="ShowPannel(0)">
+              اطلاعات سند
+            </div>
+            <div class="InfoMelk" onclick="ShowPannel(1)">مشخصات آسانسور</div>
+            <div class="InfoMelk" onclick="ShowPannel(2)">سایر اطلاعات</div>
+            <div class="InfoMelk" onclick="ShowPannel(3)">پارکینگ</div>
+            <div class="InfoMelk" onclick="ShowPannel(4)">آدرس</div>
+            <div class="InfoMelk" onclick="ShowPannel(5)">
+              اطلاعات فضای داخلی
+            </div>
+            <div class="InfoMelk" onclick="ShowPannel(6)">انشعابات</div>
+          </div>
+          <div class="WhiteAreaInfo">
+            <div class="InfoArea">
+              <span class="Tab"
+                >نوع قرارداد: <span class="Bold">فروش</span>
+              </span>
+              <span class="Tab DisNone"
+                >آسانسور: <span class="Bold">دارد</span>
+              </span>
+              <div class="Tab DisNone">
+                <div class="d-flex align-items-center justify-content-around">
+                  <div class="Flex1 text-center">
+                    <span>آسانسور: <span class="Bold">دارد</span> </span>
+                  </div>
+                  <div class="MiddleItem">
+                    <span
+                      >کابینت آشپزخانه <span class="Bold">ندارد</span>
+                    </span>
+                  </div>
+                  <div class="Flex1 text-center">
+                    <span>مساحت کل ملک <span class="Bold">250</span> </span>
+                  </div>
+                </div>
+              </div>
+
+              <span class="Tab DisNone"></span>
+              <span class="Tab DisNone"></span>
+              <span class="Tab DisNone"></span>
+              <span class="Tab DisNone"></span>
+            </div>
+          </div>
+          <h3 class="Bold h4 mt-5 Color_Secondary_700">موقعیت مکانی ملک</h3>
+          <div class="BoxOfmap mt-4"></div>
+        </div>
+      </div>
+      <h3 class="mt-5 Bold pt-5 MelksLike">ملک های مشابه</h3>
+      <div class="P_WrapperAllMelks">
+        <!-- carousel  -->
+        <div class="ArrowLeft swiper-button-next swiper-navBtn">
+          <img src="assets/images/ArrowLeft.svg" alt="" />
+        </div>
+        <div class="ArrowRight swiper-button-prev swiper-navBtn">
+          <img src="assets/images/ArrowRight.svg" alt="" />
+        </div>
+
+        <div class="WrapperAllMelks slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse" alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer HearthOnClick W_20 " alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse " alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer HearthOnClick W_20" alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse " alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer HearthOnClick W_20" alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Melks card swiper-slide">
+                <div class="P_ImgHouse">
+                  <img src="assets/images/house.png" class="ImgHouse " alt="" />
+                </div>
+                <div class="P_TypeHouse">
+                  <div class="TypeHouse Flex1">باغ شهری</div>
+                  <div>
+                    <img src="assets/images/heart.png" class="Pointer HearthOnClick W_20 " alt="" />
+                  </div>
+                </div>
+                <div class="Price">
+                  13,000,000,000 <span class="Fs15 Fw500">تومان</span>
+                </div>
+                <div class="P_DeateBuild">
+                  <div class="C_DeateBuild">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/yearBuild.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />سال ساخت بنا:<span class="YearText"> 1387 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//home.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />مساحت کل ملک:<span class="YearText">
+                        600 هزار متر مربع
+                      </span>
+                    </div>
+                  </div>
+                  <div class="C_DeateBuild Mt6">
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images//bed.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />واحد اتاق:<span class="YearText"> 4 </span>
+                    </div>
+                    <div class="Fs10 Fw400 Flex1">
+                      <img
+                        src="assets/images/Location.svg"
+                        class="IconYearBuild"
+                        alt=""
+                      />آدرس:<span class="YearText">
+                        معالی آباد، خلبانان، کوچ 6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js  -->
+    <!-- jquery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/product-view.js"></script>
+  </body>
+</html>
